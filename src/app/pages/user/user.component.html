@@ -1,0 +1,22 @@
+<p>user works!</p>
+<ul>
+    @for (game of games; track game.id) {
+        <li>
+          {{  game.text}}
+        </li>
+    }
+</ul>
+@defer () {
+    <app-motion 
+(addMoveEvent)="getFavorite($event)"
+username='Hola mundo desde user component'/>
+@if (favGame !== '') {
+    <p>Tu juego favorito es {{favGame}} </p>
+
+}
+}@placeholder {
+    <p>cargando...</p>
+}
+
+
+

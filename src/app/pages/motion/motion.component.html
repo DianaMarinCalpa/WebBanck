@@ -1,0 +1,13 @@
+<p>motion works!</p>
+{{username}}
+<img (click)="greet()"  src="https://github.com/DianaMarinCalpa.png" alt="user" width="100px" height="100px">
+
+<ul>
+    @for (game of games; track game.id) {
+        <li (click)="fav(game.text)" > {{game.text}} 
+        <p>{{game.mov}} </p>
+        </li>
+    }
+</ul>
+
+
